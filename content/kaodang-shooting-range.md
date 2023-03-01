@@ -1,6 +1,5 @@
 ---
-title: "Building A Routine
-"
+title: "Kaodang shooting range"
 description: "Kaodang is a shooting range in the province of Songkhla, Thailand. It is surrounded by stunning mountains, lush vegetation and best of all it's a small family run business."
 tags:
   - travel
