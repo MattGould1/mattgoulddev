@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "mattgoulddev",
+  "version": "0.01",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "ionic:build": "npm run generate",
+    "ionic:serve": "npm run dev",
+    "resizeImages": "babel-node --extensions \".js,.ts\" images/resizer.js"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "@types/sharp": "^0.31.1",
+    "sharp": "^0.31.3",
+    "sass": "1.57.1"
+  },
+  "dependencies": {
+    "@mdi/font": "7.1.96",
+    "@nuxt/content": "^2.3.0",
+    "vuetify": "3.0.6"
+  }
+}
