@@ -12,6 +12,10 @@ createdDate: March 3, 2023
 
 I needed to create a locations database that would allow my users to search for countries and cities using the name of the place. I used an open source database [https://github.com/dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) which is rather good. It's not 100% accurate nor has all cities but is it open source, the accuracy is being improved and is actively maintained.
 
+## Are you impatient?
+
+Yes? [https://github.com/MattGould1/Firestore-Full-Text-Search](GitHub) take a look at GitHub then :( but don't forget to come back and continue reading.
+
 ## Thinking of the API
 
 The API for this service is straight forward and it looks similar to
