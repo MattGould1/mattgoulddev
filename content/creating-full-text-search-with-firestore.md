@@ -14,7 +14,7 @@ I needed to create a locations database that would allow my users to search for 
 
 ## Are you impatient?
 
-Yes? [https://github.com/MattGould1/Firestore-Full-Text-Search](GitHub) take a look at GitHub then :( but don't forget to come back and continue reading.
+Yes? [GitHub](https://github.com/MattGould1/Firestore-Full-Text-Search) take a look at GitHub then :( but don't forget to come back and continue reading.
 
 ## Thinking of the API
 
