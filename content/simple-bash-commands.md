@@ -57,7 +57,7 @@ You can then nest the if statements and the next thing you'll want to learn is t
 
 There's a bunch of every day bash commands that I use
 
-## Undo the last git commit
+## Undo the last git (local) commit
 
 Sometimes you commit the wrong thing, run the above command. It will uncommit the previous commit. I find this useful, I often commit into the wrong branch or so and have to undo the change.
 
