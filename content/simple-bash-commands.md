@@ -57,6 +57,8 @@ You can then nest the if statements and the next thing you'll want to learn is t
 
 There's a bunch of every day bash commands that I use
 
+# Git
+
 ## Undo the last git (local) commit
 
 Sometimes you commit the wrong thing, run the above command. It will uncommit the previous commit. I find this useful, I often commit into the wrong branch or so and have to undo the change.
@@ -78,6 +80,26 @@ git commit -m "I meant to commit here"
 ```
 
 Something like that anyway.
+
+## Untrack a file
+
+There's a bunch of reasons you'd want to untrack a file, and most of them begin with `git add .`. To untrack a file in Git it's a 3 step process.
+
+1. Add the file to your `.gitignore`
+2. Tell Git to untrack the file
+3. Make a commit to untrack the file remotely.
+
+```sh
+git rm --cached path/to/file
+```
+
+You can also untrack an entire folder with `-r`
+
+```sh
+git rm -r --cached path/to/folder
+```
+
+After you've done this, if you feel brave `git add . && git commit -m "untrack so and so file"` otherwise do the more sane `git commit -m "untrack so and so file" path/to/file`
 
 ## Kill Node on port (macos)
 
