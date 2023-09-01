@@ -13,10 +13,10 @@
     "resizeImages": "babel-node --extensions \".js,.ts\" images/resizer.js"
   },
   "devDependencies": {
-    "nuxt": "3.0.0",
     "@types/sharp": "^0.31.1",
-    "sharp": "^0.31.3",
-    "sass": "1.57.1"
+    "nuxt": "3.0.0",
+    "sass": "1.57.1",
+    "sharp": "^0.31.3"
   },
   "dependencies": {
     "@mdi/font": "7.1.96",
