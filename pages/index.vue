@@ -23,7 +23,7 @@ const icons = [
         <v-row class="pt-8 text-center">
           <v-col cols="12">
             <h1>Matt Gould</h1>
-            <h4>Software Engineer - Father - Based In Thailand</h4>
+            <h4>Software Engineer - Based In Thailand</h4>
             <v-btn
               v-for="icon in icons"
               :key="icon.icon"
