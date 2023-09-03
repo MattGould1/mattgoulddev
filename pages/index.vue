@@ -42,45 +42,65 @@ const icons = [
               <v-col cols="12">
                 <h2>About Me</h2>
                 <p>
-                  I've always enjoyed using computers and playing games and
-                  that's how I got started with programming. The first programs
-                  I created were for a game called RuneScape. The programs were
-                  very simple, along the lines of ways to keep track of your
-                  in-game drops and then workout how common drops were. I coded
-                  these first programs in
+                  Ever since a kid I've loved using computers and playing games,
+                  which is how I got started with programming. As a kid I played
+                  a lot of games but got heavily into a game called RuneScape,
+                  an MMORPG and I began to create small programs, I guess you
+                  could say plugins, to improve the game. Most of the plugins
+                  were very simple for example ways to track drops from monsters
+                  and such. I coded these first programs in
                   <a href="https://en.wikipedia.org/wiki/Visual_Basic_(.NET)"
                     >Visual Basic</a
-                  >, which was the first language I ever used. From that point
-                  on I was hooked, whenever I ran into a problem I wanted to
-                  solve, I just taught myself how to do it.
+                  >. From that point on, whenever I ran into a problem I'd try
+                  to write a program to help fix it.
                 </p>
               </v-col>
               <v-col cols="12">
                 <p>
-                  I'm currently working on a project called
+                  I have a few aspirations in life that I'd like to help people
+                  with. First on the list is that I'd like to create something
+                  that would help people get healthy. Be that physically by
+                  losing weight, gaining weight, exercising more or eating a
+                  better diet or mentally. Next on my list is education, I'd
+                  like to teach people what I know (computers) and finally I
+                  want to help people find a partner in life. It's a bit of a
+                  random list and if you want to learn a bit about each, read
+                  here.
+                </p>
+                <p>
+                  Currently I'm working on a project called
                   <a target="_blank" href="https://spicy.dating">Spicy Dating</a
-                  >. I've been working on Spicy Dating since march 2023. Dating
-                  is seriously saturated there's tons of competition but having
-                  met my wife online using the competition, I believe online
-                  dating can be done better. I want to improve on the relevancy
-                  of matches. I want to improve on communication and I want to
-                  reduce the cost to open online dating up to millions. That's
-                  the goal anyway.
+                  >. I've been working on Spicy Dating since March 2023. Dating
+                  is saturated, there's tons of competition but having met my
+                  wife online using the competition, I believe that online
+                  dating can be done better. Right now, I think online dating is
+                  almost a scam. You have to pay obscene amounts of money and
+                  data suggests that there's only a few winners. I want to
+                  reduce the cost to open online dating up to millions and
+                  create an algorithm that actually matches people who might get
+                  along, with no funny business in the middle. That's the goal
+                  anyway.
                 </p>
               </v-col>
               <v-col cols="12">
                 <p>
-                  I'm not on social media. I love having discussions but only if
-                  the goal is to be genuine and listen and try to understand
-                  where people are coming from. I don't think those types of
-                  discussions happen regularly on social media.
+                  You won't find me on social media. I love having discussions
+                  but only when the goal of the discussion is to be honest,
+                  listen and try to learn something from each other. Most online
+                  conversations seem to be about `winning` and in the end, those
+                  conversations are a waste of time.
                 </p>
               </v-col>
               <v-col cols="12">
                 <p>
-                  When I'm not at the computer, you'll find me biking up hills,
-                  running, lifting weights, swimming and stretching. I'm very
-                  into fitness.
+                  I love to exercise. When I'm not at the computer, there's a
+                  good chance I'll be on my bike, running, lifting weights,
+                  swimming or stretching. I'm probably a little too
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise#Euphoria"
+                    >addicted</a
+                  >, when I miss a day I feel quite depressed.
                 </p>
               </v-col>
             </v-row>
