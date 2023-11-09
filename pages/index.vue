@@ -37,79 +37,42 @@ const icons = [
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" sm="12" md="8" lg="8">
+          <v-col cols="12" sm="12" md="6" offset-md="3" lg="6" offset-lg="3">
             <v-row>
               <v-col cols="12">
-                <h2>About Me</h2>
+                <h2>A brief glance.</h2>
                 <p>
-                  Ever since a kid I've loved using computers and playing games,
-                  which is how I got started with programming. As a kid I played
-                  a lot of games but got heavily into a game called RuneScape,
-                  an MMORPG and I began to create small programs, I guess you
-                  could say plugins, to improve the game. Most of the plugins
-                  were very simple for example ways to track drops from monsters
-                  and such. I coded these first programs in
+                  I've always loved using computers (and playing games) and
+                  those passions are how I got my first experience of
+                  programming. As a kid I'd play a game called RuneScape, an
+                  MMORPG. I began to create small scripts, though nowadays a
+                  better term would be plugins to improve the game. The plugins
+                  were super simple. They would for example help you track drops
+                  from monsters and workout the probability of receiving certain
+                  in game items. My first plugin was built using
                   <a href="https://en.wikipedia.org/wiki/Visual_Basic_(.NET)"
                     >Visual Basic</a
-                  >. From that point on, whenever I ran into a problem I'd try
-                  to write a program to help fix it.
+                  >. Since that point, whenever I've run into a problem I figure
+                  out a way to solve it.
                 </p>
+                <v-btn class="mb-1" color="pink" to="/about-me" block>
+                  Read More
+                </v-btn>
+                <v-btn block class="mb-1" to="/experience" variant="tonal">
+                  Experience
+                </v-btn>
               </v-col>
               <v-col cols="12">
-                <p>
-                  I have a few aspirations in life that I'd like to help people
-                  with. First on the list is that I'd like to create something
-                  that would help people get healthy. Be that physically by
-                  losing weight, gaining weight, exercising more or eating a
-                  better diet or mentally. Next on my list is education, I'd
-                  like to teach people what I know (computers) and finally I
-                  want to help people find a partner in life. It's a bit of a
-                  random list and if you want to learn a bit about each, read
-                  here.
-                </p>
-                <p>
-                  Currently I'm working on a project called
-                  <a target="_blank" href="https://spicy.dating">Spicy Dating</a
-                  >. I've been working on Spicy Dating since March 2023. Dating
-                  is saturated, there's tons of competition but having met my
-                  wife online using the competition, I believe that online
-                  dating can be done better. Right now, I think online dating is
-                  almost a scam. You have to pay obscene amounts of money and
-                  data suggests that there's only a few winners. I want to
-                  reduce the cost to open online dating up to millions and
-                  create an algorithm that actually matches people who might get
-                  along, with no funny business in the middle. That's the goal
-                  anyway.
-                </p>
-              </v-col>
-              <v-col cols="12">
-                <p>
-                  You won't find me on social media. I love having discussions
-                  but only when the goal of the discussion is to be honest,
-                  listen and try to learn something from each other. Most online
-                  conversations seem to be about `winning` and in the end, those
-                  conversations are a waste of time.
-                </p>
-              </v-col>
-              <v-col cols="12">
-                <p>
-                  I love to exercise. When I'm not at the computer, there's a
-                  good chance I'll be on my bike, running, lifting weights,
-                  swimming or stretching. I'm probably a little too
-                  <a
-                    target="_blank"
-                    href="https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise#Euphoria"
-                    >addicted</a
-                  >, when I miss a day I feel quite depressed.
-                </p>
+                <v-btn
+                  block
+                  color="white"
+                  class="mb-1"
+                  to="/blog"
+                  variant="tonal"
+                  >Blog</v-btn
+                >
               </v-col>
             </v-row>
-          </v-col>
-          <v-col cols="12" sm="12" md="4" lg="4">
-            <v-btn class="mb-1" to="/blog" variant="tonal" block>Blog</v-btn>
-            <v-btn class="mb-1" to="/experience" variant="tonal" block>
-              Experience
-            </v-btn>
           </v-col>
         </v-row>
       </v-container>
@@ -249,5 +212,9 @@ h4 {
 .on-top {
   position: relative;
   z-index: 3;
+}
+
+p {
+  margin-bottom: 16px;
 }
 </style>
