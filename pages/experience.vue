@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <v-container>
+  <main class="fill-height">
+    <v-container class="fill-height" fluid>
       <v-row>
         <v-col cols="12">
           <h1>Matt Gould</h1>
@@ -34,26 +34,47 @@
           <v-timeline side="end" align="start">
             <v-timeline-item dot-color="pink" size="small">
               <div class="d-flex">
-                <strong class="me-4"> Mar 2023 </strong>
+                <strong class="me-4"> Nov 2023 - </strong>
+                <div>
+                  <strong>BestReview - Software Engineer</strong>
+                  <div class="text-caption">
+                    <a href="https://bestreview.asia" target="_blank">
+                      BestReview
+                    </a>
+                    is an Asian product review application. They buy and test
+                    products in house from Shopee and Lazada. They wanted to
+                    expand their review to allow for external reviews. My job
+                    was to help them scale by using AWS EC2, ELB and CF as well
+                    as build an external review application that could be
+                    integrated into their current architecture. We chose to go
+                    with a serverless architecture for the review application
+                    which allowed for integration with their current
+                    architecture and also allowed for new mobile clients to be
+                    built.
+                  </div>
+                </div>
+              </div>
+            </v-timeline-item>
+
+            <v-timeline-item dot-color="pink" size="small">
+              <div class="d-flex">
+                <strong class="me-4"> Mar 2023 - Jan 2024 </strong>
                 <div>
                   <strong>Spicy Dating - Owner</strong>
                   <div class="text-caption">
                     Online dating is an amazing tool but often it feels like the
-                    tool is misapplied. Which is where
-                    <a target="_blank" href="https://spicy.dating"
-                      >Spicy Dating</a
-                    >
-                    comes from. We want to make online dating great for
-                    everyone. There are 3 key areas that we can improve on
-                    firstly, the relevancy of matches. We want to help people
-                    find the best matches for themselves and often that means
-                    getting rid of overly complex algorithms. We use a relevancy
-                    based algorithm using OpenSearch. Secondly is communication.
-                    We want to help people connect globally and that means
-                    bridging a language barrier. Lastly is cost. Online dating
-                    is seriously expensive, almost to the point that it seems
-                    like a scam. We want to remove the majority of the cost for
-                    people genuinely looking to form relationships.
+                    tool is misapplied. Which is where Spicy Dating comes from.
+                    We want to make online dating great for everyone. There are
+                    3 key areas that we can improve on firstly, the relevancy of
+                    matches. We want to help people find the best matches for
+                    themselves and often that means getting rid of overly
+                    complex algorithms. We use a relevancy based algorithm using
+                    OpenSearch. Secondly is communication. We want to help
+                    people connect globally and that means bridging a language
+                    barrier. Lastly is cost. Online dating is seriously
+                    expensive, almost to the point that it seems like a scam. We
+                    want to remove the majority of the cost for people genuinely
+                    looking to form relationships.
                   </div>
                 </div>
               </div>

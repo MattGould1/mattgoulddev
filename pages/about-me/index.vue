@@ -37,83 +37,73 @@ const icons = [
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" sm="12" md="8" lg="8">
+          <v-col offset-lg="2" offset-md="2" cols="12" sm="12" md="8" lg="8">
             <v-row>
               <v-col cols="12">
                 <h2>About Me</h2>
                 <p>
-                  I don't know the meaning of life in general and not really of
-                  my life yet either. I do however have a few general points to
-                  aim for.
+                  I've always found it challenging to write about myself. I'm
+                  never sure what it is that others would really want to know.
+                  I'll keep this short and sweet.
+                </p>
+                <p>
+                  I was born in the United Kingdom (just), at the time that my
+                  mum was pregnant, my parents were living in France. I believe
+                  that my mum wanted to return to the UK to give birth. I spent
+                  some time in France as a baby but I don't have any
+                  recollection of this time and my French language skills are
+                  non-existent :).
+                </p>
+                <p>
+                  My parents returned to the UK in my early childhood and I had
+                  a pretty typical upbringing in a middle class family.
+                </p>
+                <p>
+                  As I got a little older I got more into computers which was
+                  when I reflect on it, probably a contributing reason to me
+                  gaining weight as a child and teenager. It wasn't until my 20s
+                  that I figured out how to lose weight. In my case, since I
+                  have a huge appetite the short and sweet of it was finding low
+                  calorie foods that I enjoyed and could eat lots of and feel
+                  satisfied.
+                </p>
+                <p>
+                  As my passion for computers grew, I slowly found out that I
+                  could create my own applications. I forget exactly how I
+                  learnt that I could program applications but I do remember
+                  that the first real application that I created was a drop
+                  tracker for an MMORPG game that I was playing. Overtime I
+                  learnt more languages, typically higher level languages and
+                  usually what languages and tools I picked were simply suited
+                  to the task at hand.
                 </p>
 
                 <p>
-                  I have always struggled with my weight and it wasn't until my
-                  20's that I figured out how to lose weight, keep it off and
-                  get fit. I want to help people do the same. At the minute, the
-                  way I do this is using Discord and participating in a fitness
-                  community. I haven't had a good idea of how to create
-                  something to help people enmasse. There's already a lot of
-                  calorie trackers (which I'm not even sure if they promote a
-                  healthy relationship with food), there's a lot of workout apps
-                  that will help you program a workout and there are already
-                  large communities where people can go talk and get advice. I
-                  hope one day I'll have an novel idea that will be useful.
-                </p>
-
-                <p>
-                  I did not enjoy school, it was boring and I didn't learn much.
-                  There were subjects that I was naturally interested in like
-                  maths which I excelled in and subjects like English that I
-                  struggled with. I blame my teachers which goes against my
-                  nature of the individual being responsible. I'd be very
-                  interested at one point in my life of teaching how to program
-                  and I'm going to use this blog as the first step into that.
-                </p>
-
-                <p>
-                  Lastly to keep this about me a little shorter, is that I'd
-                  like to help people find a partner in life. Currently I'm
-                  working on a project called
-                  <a target="_blank" href="https://spicy.dating">Spicy Dating</a
-                  >. I've been working on Spicy Dating since March 2023. Dating
-                  is saturated, there's tons of competition but having met my
-                  wife online using the competition, I believe that online
-                  dating can be done better. Right now, I think online dating is
-                  almost a scam. You have to pay obscene amounts of money and
-                  data suggests that there's only a few winners. I want to
-                  reduce the cost to open online dating up to millions and
-                  create an algorithm that actually matches people who might get
-                  along, with no funny business in the middle. That's the goal
-                  anyway.
-                </p>
-
-                <p>
-                  You won't find me on social media. I love having discussions
-                  but only when the goal of the discussion is to be honest,
-                  listen and try to learn something from each other. Most online
-                  conversations seem to be about `winning` and in the end, those
-                  conversations are a waste of time.
-                </p>
-
-                <p>
-                  I love to exercise. When I'm not at the computer, there's a
-                  good chance I'll be on my bike, running, lifting weights,
-                  swimming or stretching. I'm probably a little too
-                  <a
-                    target="_blank"
-                    href="https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise#Euphoria"
-                    >addicted</a
-                  >, when I miss a day I feel quite depressed.
+                  Nowadays I still love computers but I've found a balance
+                  between computers and getting outside and I've found myself
+                  become addicted to exercise. When I'm not at the computer
+                  there's a very good chance that I'm doing exercise and as my
+                  son is getting older, playing with my son.
                 </p>
               </v-col>
+              <v-col cols="12">
+                <div class="d-flex justify-center">
+                  <v-btn
+                    width="200px"
+                    class="mb-1"
+                    to="/experience"
+                    variant="tonal"
+                  >
+                    Experience
+                  </v-btn>
+                </div>
+                <div class="d-flex justify-center">
+                  <v-btn width="200px" color="white" to="/blog" variant="tonal"
+                    >Blog</v-btn
+                  >
+                </div>
+              </v-col>
             </v-row>
-          </v-col>
-          <v-col cols="12" sm="12" md="4" lg="4">
-            <v-btn class="mb-1" to="/blog" variant="tonal" block>Blog</v-btn>
-            <v-btn class="mb-1" to="/experience" variant="tonal" block>
-              Experience
-            </v-btn>
           </v-col>
         </v-row>
       </v-container>
@@ -204,7 +194,7 @@ h4 {
 
   @for $i from 0 through $waveLength {
     $borderWidth: random(10) * 2;
-    $animeSpeed: random(15) * 2s;
+    $animeSpeed: random(150) * 2s;
     &.wave-#{$i} {
       left: percentage(calc(random(75) / 100));
       top: percentage(calc(random(25) / 100));

@@ -8,7 +8,7 @@ useHead({
   <v-container>
     <v-row>
       <v-col class="text-center">
-        <h1>This is a simple blog template using Nuxt3</h1>
+        <p>These are some ramblings.</p>
       </v-col>
     </v-row>
   </v-container>

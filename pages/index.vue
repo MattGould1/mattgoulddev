@@ -37,40 +37,49 @@ const icons = [
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" sm="12" md="6" offset-md="3" lg="6" offset-lg="3">
+          <v-col cols="12" sm="12" md="8" offset-md="2" lg="8" offset-lg="2">
             <v-row>
               <v-col cols="12">
                 <h2>A brief glance.</h2>
                 <p>
-                  I've always loved using computers (and playing games) and
-                  those passions are how I got my first experience of
-                  programming. As a kid I'd play a game called RuneScape, an
-                  MMORPG. I began to create small scripts, though nowadays a
-                  better term would be plugins to improve the game. The plugins
-                  were super simple. They would for example help you track drops
-                  from monsters and workout the probability of receiving certain
-                  in game items. My first plugin was built using
-                  <a href="https://en.wikipedia.org/wiki/Visual_Basic_(.NET)"
-                    >Visual Basic</a
-                  >. Since that point, whenever I've run into a problem I figure
-                  out a way to solve it.
+                  My first realisation of my passion for computers was loading
+                  floppy disks to play
+                  <a
+                    href="https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert"
+                    target="_blank"
+                  >
+                    Red Alert 1 </a
+                  >. It was actually my older brothers game and a computer that
+                  my dad had bought for work. As I grew older my passion for
+                  computers and games remained and as a young teenager I began
+                  playing FPS and MMORPG games which led to my first programming
+                  experiences. My first ever program was a drop tracker for an
+                  MMORPG called RuneScape. This program was pretty simple, it
+                  would keep track of in game drops and workout the probability
+                  of getting drops from NPCs. I've been programming ever since.
                 </p>
-                <v-btn class="mb-1" color="pink" to="/about-me" block>
-                  Read More
-                </v-btn>
-                <v-btn block class="mb-1" to="/experience" variant="tonal">
-                  Experience
-                </v-btn>
               </v-col>
               <v-col cols="12">
-                <v-btn
-                  block
-                  color="white"
-                  class="mb-1"
-                  to="/blog"
-                  variant="tonal"
-                  >Blog</v-btn
-                >
+                <div class="d-flex justify-center">
+                  <v-btn width="200px" class="mb-1" color="pink" to="/about-me">
+                    Read More
+                  </v-btn>
+                </div>
+                <div class="d-flex justify-center">
+                  <v-btn
+                    width="200px"
+                    class="mb-1"
+                    to="/experience"
+                    variant="tonal"
+                  >
+                    Experience
+                  </v-btn>
+                </div>
+                <div class="d-flex justify-center">
+                  <v-btn width="200px" color="white" to="/blog" variant="tonal"
+                    >Blog</v-btn
+                  >
+                </div>
               </v-col>
             </v-row>
           </v-col>
@@ -163,7 +172,7 @@ h4 {
 
   @for $i from 0 through $waveLength {
     $borderWidth: random(10) * 2;
-    $animeSpeed: random(15) * 2s;
+    $animeSpeed: random(150) * 2s;
     &.wave-#{$i} {
       left: percentage(calc(random(75) / 100));
       top: percentage(calc(random(25) / 100));
