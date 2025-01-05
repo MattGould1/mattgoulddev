@@ -42,48 +42,52 @@ const icons = [
               <v-col cols="12">
                 <h2>About Me</h2>
                 <p>
-                  I've always found it challenging to write about myself. I'm
-                  never sure what it is that others would really want to know.
-                  I'll keep this short and sweet.
+                  I love computers, my first passion with computers was playing
+                  games. The first times I remember using a computer were to
+                  play the very amazing (at the time at least) games on Windows
+                  2000. When I truly fell in love with the computer was when I
+                  inserted my brothers Red Alert 1 floppy disk and started
+                  building bases, it would be an understatement to say that I
+                  was obsessed.
                 </p>
                 <p>
-                  I was born in the United Kingdom (just), at the time that my
-                  mum was pregnant, my parents were living in France. I believe
-                  that my mum wanted to return to the UK to give birth. I spent
-                  some time in France as a baby but I don't have any
-                  recollection of this time and my French language skills are
-                  non-existent :).
+                  This obsession continued as a child but it wasn't until I was
+                  around 12 years old that I learnt you could create
+                  applications for a computer yourself. I was playing an MMORPG
+                  game called RuneScape, I won't bother explaining more most of
+                  you know what that means. I ended up creating a drop tracker
+                  for the game. It was a fairly simple program, every time you
+                  received a drop it would log which drop it was and began to
+                  workout the probability of receiving any particular drop. From
+                  this point on, any time I had a problem that I thought could
+                  be solved with a computer program, I would try to solve it.
                 </p>
                 <p>
-                  My parents returned to the UK in my early childhood and I had
-                  a pretty typical upbringing in a middle class family.
+                  My first job was completely unrelated to programming, my dad
+                  was the owner of a construction company so I began working
+                  with my dad. I still didn't realise at the time that I had any
+                  actual skills in programming and didn't know it was an actual
+                  job path. It wasn't until I was around 18 years old that I was
+                  introduced to web development and found out that people would
+                  pay for websites. I did a few small jobs for friends and
+                  family but I knew this wasn't my path, the design aspect just
+                  wasn't for me.
                 </p>
                 <p>
-                  As I got a little older I got more into computers which was
-                  when I reflect on it, probably a contributing reason to me
-                  gaining weight as a child and teenager. It wasn't until my 20s
-                  that I figured out how to lose weight. In my case, since I
-                  have a huge appetite the short and sweet of it was finding low
-                  calorie foods that I enjoyed and could eat lots of and feel
-                  satisfied.
+                  The first "proper" job I had relating to programming was was
+                  working with a company called ITMarine LTD in 2015. They were
+                  a fairly small company that had created in house tools for
+                  ship brokerage firms. The technology was very dated but the
+                  idea was cool. It was the first time that I thought to myself
+                  that I could do this job forever. I loved working on data, for
+                  me it was far easier to visualize than creating a UI/UX.
                 </p>
                 <p>
-                  As my passion for computers grew, I slowly found out that I
-                  could create my own applications. I forget exactly how I
-                  learnt that I could program applications but I do remember
-                  that the first real application that I created was a drop
-                  tracker for an MMORPG game that I was playing. Overtime I
-                  learnt more languages, typically higher level languages and
-                  usually what languages and tools I picked were simply suited
-                  to the task at hand.
-                </p>
-
-                <p>
-                  Nowadays I still love computers but I've found a balance
-                  between computers and getting outside and I've found myself
-                  become addicted to exercise. When I'm not at the computer
-                  there's a very good chance that I'm doing exercise and as my
-                  son is getting older, playing with my son.
+                  Since then I've worked with various companies picking up new
+                  skills, and forgetting a ton of old skills. Now I'm looking to
+                  take the next step. I want to find a startup that I can work
+                  with and build the system from the ground up, with all the
+                  risks that come with that.
                 </p>
               </v-col>
               <v-col cols="12">
