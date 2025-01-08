@@ -42,27 +42,28 @@ const icons = [
               <v-col cols="12">
                 <h2>A brief glance.</h2>
                 <p>
-                  I'm never quite sure what I should write about in an "about
-                  me". I'm not sure what others would really want to know. I
-                  blame this on being introverted and for a time, I conflated
-                  being introverted with not wanting to communicate because I
-                  found it so much more difficult than others. What I've learnt
-                  though, is that actually, I enjoy communicating with others,
-                  so long as the conversation is meaningful or I know them and
-                  the group is small.
+                  I always feel uneasy writing these types of "about me". I'm
+                  not sure what others would really want to know. Do you just
+                  want to know about what I do? Or do you want to know about who
+                  I am? Or neither lol?
                 </p>
                 <p>
-                  I feel I've lost a good chunk of the audience already by not
-                  doing what I see in other about me's. I feel the way to
-                  capture those people is to write that I do amazing stuff, I
-                  get shit done and insert other positive phrases. I do think I
-                  have those qualities but my thinking it doesn't justify saying
-                  it in my mind. It's way easier to simply show my thinking and
-                  show my work.
+                  I'll try my best. I'm introverted, I always thought this meant
+                  I didn't like communicating with others but I've discovered
+                  that's not the truth, I like communicating with others and
+                  getting to know them. I like meeting people in small groups
+                  and not large ones.
                 </p>
                 <p>
-                  If you are interested in learning a bit more about me, click
-                  on read more below otherwise cya and have a nice day.
+                  I like solving problems. The best part of being in
+                  development, is that moment, where you're right on the cusp of
+                  solving a problem. Then in the next instance you're like
+                  "shit, but I didn't consider that other edge case" and back to
+                  the drawing board we go.
+                </p>
+                <p>
+                  I hope this suffices as a quick intro. If you're interested in
+                  learning more, send me an email or click read more.
                 </p>
               </v-col>
               <v-col cols="12">
