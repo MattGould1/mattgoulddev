@@ -5,15 +5,6 @@ definePageMeta({
 
 const stars = 200;
 const waves = 5;
-
-const icons = [
-  { link: "https://github.com/MattGould1", icon: "mdi-github" },
-  { link: "https://gitlab.com/MatthewGould123", icon: "mdi-gitlab" },
-  {
-    link: "https://www.linkedin.com/in/matt-g-05248910b/",
-    icon: "mdi-linkedin",
-  },
-];
 </script>
 
 <template>
@@ -22,54 +13,86 @@ const icons = [
       <v-container class="on-top">
         <v-row class="pt-8 text-center">
           <v-col cols="12">
-            <h1>Matt Gould</h1>
-            <h4>Software Engineer - Based In Thailand</h4>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon.icon"
-              class="mx-4"
-              :icon="icon.icon"
-              :href="icon.link"
-              target="_blank"
-              variant="text"
-              size="large"
-            ></v-btn>
+            <custom-header> </custom-header>
           </v-col>
         </v-row>
         <v-row>
           <v-col cols="12" sm="12" md="8" offset-md="2" lg="8" offset-lg="2">
             <v-row>
               <v-col cols="12">
-                <h2>A brief glance.</h2>
+                <h1>Latest Projects</h1>
+              </v-col>
+              <v-col cols="12">
+                <h2>Pump Fun AI Bot</h2>
                 <p>
-                  I always feel uneasy writing these types of "about me". I'm
-                  not sure what others would really want to know. Do you just
-                  want to know about what I do? Or do you want to know about who
-                  I am? Or neither lol?
+                  Pump Fun AI Bot is a bot created using Node, Python, PG and
+                  Tensorflow. The goal of the project is to be able to make real
+                  world predictions about the
+                  <a href="https://pump.fun" target="_blank">Pump.fun</a>
+                  trading platform. Take a look at the links below for more
+                  information.
                 </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/MattGould1/pumpdotfun"
+                      target="_blank"
+                    >
+                      PumpDotFun (client)
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/MattGould1/pumpai"
+                      target="_blank"
+                    >
+                      PumpAI (Tensorflow)
+                    </a>
+                  </li>
+                </ul>
+              </v-col>
+
+              <v-col cols="12">
+                <h2>LSWR CRM</h2>
                 <p>
-                  I'll try my best. I'm introverted, I always thought this meant
-                  I didn't like communicating with others but I've discovered
-                  that's not the truth, I like communicating with others and
-                  getting to know them. I like meeting people in small groups
-                  and not large ones.
+                  Full disclosure, my family run
+                  <a href="https://londonsashwindows.com/" target="_blank"
+                    >LSWR</a
+                  >
+                  and they asked me if I could build them an app that would
+                  allow them to create digital surveys for their business. For
+                  them, creating a survey involves going to a customers house
+                  and walking from room to room, detailing what work needs to be
+                  carried out on each window. Essentially, that's the core of
+                  the system. They had obviously tried available CRMs and while
+                  those helped manage contacts, it wouldn't help carrying out
+                  surveys and couldn't be used to generate quotes and invoices
+                  from surveys as these were not digitalized, which for them was
+                  the main time sync of their admin, and could also be error
+                  prone.
                 </p>
+
                 <p>
-                  I like solving problems. The best part of being in
-                  development, is that moment, where you're right on the cusp of
-                  solving a problem. Then in the next instance you're like
-                  "shit, but I didn't consider that other edge case" and back to
-                  the drawing board we go.
+                  I built the system with AWS serverless architecture (Lambda,
+                  DDB, AppSync, SQS (for data aggregation from DDB streams), S3,
+                  CF, Cognito) and used NuxtJS for the frontend. Below is a link
+                  to the development site, please send me an email for access.
                 </p>
-                <p>
-                  I hope this suffices as a quick intro. If you're interested in
-                  learning more, send me an email or click read more.
-                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://d3ijcs47agcxxc.cloudfront.net/"
+                      target="_blank"
+                    >
+                      https://d3ijcs47agcxxc.cloudfront.net/
+                    </a>
+                  </li>
+                </ul>
               </v-col>
               <v-col cols="12">
                 <div class="d-flex justify-center">
                   <v-btn width="200px" class="mb-1" color="pink" to="/about-me">
-                    Read More
+                    About Me
                   </v-btn>
                 </div>
                 <div class="d-flex justify-center">
@@ -83,8 +106,13 @@ const icons = [
                   </v-btn>
                 </div>
                 <div class="d-flex justify-center">
-                  <v-btn width="200px" color="white" to="/blog" variant="tonal"
-                    >Blog</v-btn
+                  <v-btn
+                    width="200px"
+                    color="white"
+                    href="https://matthewfg.substack.com/p/"
+                    target="_blank"
+                    variant="tonal"
+                    >Substack</v-btn
                   >
                 </div>
               </v-col>

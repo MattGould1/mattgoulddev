@@ -1,80 +1,56 @@
 <template>
   <main class="fill-height">
-    <v-container class="fill-height" fluid>
-      <v-row>
+    <v-container class="bg fill-height" fluid>
+      <v-row class="on-top text-center">
         <v-col cols="12">
-          <h1>Matt Gould</h1>
-          <h2>Key Skills</h2>
-
-          <v-chip-group column>
-            <v-chip>AWS</v-chip>
-            <v-chip>ElasticSearch </v-chip>
-            <v-chip>DynamoDB</v-chip>
-            <v-chip>Lambda</v-chip>
-            <v-chip>AppSync</v-chip>
-            <v-chip>Cognito</v-chip>
-            <v-chip>SNS</v-chip>
-            <v-chip>SQS</v-chip>
-            <v-chip>CloudFront</v-chip>
-            <v-chip>S3</v-chip>
-            <v-chip>Serverless Framework</v-chip>
-            <v-chip>NodeJS</v-chip>
-            <v-chip>VueJS</v-chip>
-            <v-chip>CapacitorJS</v-chip>
-            <v-chip>Vuetify</v-chip>
-            <v-chip>Nuxt</v-chip>
-            <v-chip>Docker</v-chip>
-            <v-chip>Bash</v-chip>
-          </v-chip-group>
+          <custom-header> </custom-header>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12">
+
+      <v-row class="on-top">
+        <v-col cols="12" sm="12" md="9">
           <h2>Experience</h2>
-          <v-timeline side="end" align="start">
+          <v-timeline side="end" align="start" density="compact">
             <v-timeline-item dot-color="pink" size="small">
               <div class="d-flex">
                 <strong class="me-4"> Nov 2023 - </strong>
                 <div>
-                  <strong>BestReview - Software Engineer</strong>
-                  <div class="text-caption">
-                    <a href="https://bestreview.asia" target="_blank">
+                  <div><strong>Software Engineer (remote)</strong></div>
+                  <strong
+                    ><a href="https://bestreview.asia" target="_blank">
                       BestReview
-                    </a>
-                    is an Asian product review application. They buy and test
-                    products in house from Shopee and Lazada. They wanted to
-                    expand their review to allow for external reviews. My job
-                    was to help them scale by using AWS EC2, ELB and CF as well
-                    as build an external review application that could be
-                    integrated into their current architecture. We chose to go
-                    with a serverless architecture for the review application
-                    which allowed for integration with their current
-                    architecture and also allowed for new mobile clients to be
-                    built.
-                  </div>
-                </div>
-              </div>
-            </v-timeline-item>
-
-            <v-timeline-item dot-color="pink" size="small">
-              <div class="d-flex">
-                <strong class="me-4"> Mar 2023 - Jan 2024 </strong>
-                <div>
-                  <strong>Spicy Dating - Owner</strong>
+                    </a></strong
+                  >
                   <div class="text-caption">
-                    Online dating is an amazing tool but often it feels like the
-                    tool is misapplied. Which is where Spicy Dating comes from.
-                    We want to make online dating great for everyone. There are
-                    3 key areas that we can improve on firstly, the relevancy of
-                    matches. We want to help people find the best matches for
-                    themselves and often that means getting rid of overly
-                    complex algorithms. We use a relevancy based algorithm using
-                    OpenSearch. Secondly is communication. We want to help
-                    people connect globally and that means bridging a language
-                    barrier. Lastly is cost. Online dating is seriously
-                    expensive, almost to the point that it seems like a scam. We
-                    want to remove the majority of the cost for people genuinely
-                    looking to form relationships.
+                    <p>
+                      My role at BR was to solve scaling issues and create an
+                      external community review platform that could be bolted
+                      onto their existing website but essentially, would become
+                      its own entity later.
+                    </p>
+                    <p>
+                      The scaling issues BR were facing were due to a mix of
+                      code and infrastructure architecture. Code wise, their
+                      website is a WP site with (many) plugins. These additional
+                      plugins and theme being used meant that a single post page
+                      would run as many as 150 queries to load. At peak time
+                      this would often cause issues with their MySQL DB. The
+                      solution here was to implement an effective caching
+                      strategy. We moved from DO to AWS and began using
+                      CloudFront, RDS, EC2 and ELB. The biggest impact was using
+                      CloudFront and the implementation of a good cache
+                      invalidation strategy that would only invalidate the
+                      affected pages of an admin update.
+                    </p>
+                    <p>
+                      The review platform was built with serverless
+                      architecture. The backend used EC2, Lambda, Cognito, SQS,
+                      SNS, DDB, CW, AppSync and API Gateway. I chose these
+                      technologies for speed of development and lack of needing
+                      a devops team to help maintain the system. The frontend
+                      was integrated into the website using an IFrame and was
+                      hosted using S3 and CF.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -90,23 +66,32 @@
                   Jan 2020
                 </strong>
                 <div>
-                  <strong>DatHuis - Software Engineer</strong>
+                  <div><strong>Software Engineer (remote)</strong></div>
+                  <strong
+                    ><a target="_blank" href="https://dathuis.nl"
+                      >DatHuis</a
+                    ></strong
+                  >
                   <div class="text-caption">
-                    <a target="_blank" href="https://dathuis.nl">DatHuis</a> is
-                    an automation tool for the Dutch real estate market. It's
-                    aimed at real estate agents to help them manage their leads.
-                    During my time with DatHuis I worked on the backend
-                    architecture using AWS and
-                    <a target="_blank" href="https://www.serverless.com/"
-                      >Serverless Framework</a
-                    >. It was at DatHuis that I realized the power of serverless
-                    technologies like DynamoDB, Lambda and a lot more. The
-                    funnest part of working with DatHuis was getting the chance
-                    to work with ElasticSearch. I contributed quite a large
-                    amount to the ElasticSearch architecture. In the end we were
-                    able to have full typescript support based on index mappings
-                    (which is totally awesome), automated deployments, with
-                    automated index updates and re-indexing.
+                    <p>
+                      DatHuis is an automation tool for real estate brokers
+                      focusing on the Dutch real estate market.
+                    </p>
+                    <p>
+                      At DatHuis I helped sign a no code filter language that
+                      would allow brokers to create filters with boolean logic.
+                      This was achieved with using ElasticSearch and GraphQL.
+                    </p>
+                    <p>
+                      I created a transformation layer between our database
+                      (DDB) and ElasticSearch that kept our ES models in sync
+                      with our DB models that also allowed for custom mappings
+                      on DB models on a DB model type basis. The outcome was
+                      that we had full typescript support for ES and DDB models,
+                      our ES models were prepared for mapping updates if and
+                      when we wanted to include them. We could update a mapping
+                      automatically using ES reindexing and multiple indexes.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -122,15 +107,29 @@
                   Nov 2018
                 </strong>
                 <div>
-                  <strong>Saavu - Full Stack Web Developer</strong>
+                  <div><strong>Full Stack Developer (remote)</strong></div>
+                  <strong>Saavu</strong>
                   <div class="text-caption">
-                    Saavu is an events management solution. I joined Saavu in
-                    November 2018. Working with Saavu was awesome, I had a lot
-                    of freedom to choose technologies and learn new skills like
-                    setting up CI/CD deployments and learning from some
-                    amazingly talented Frontend developers. On a day to day
-                    basis we used the following technologies: NodeJS (Express),
-                    PostGres, AWS (Zeit), Docker and NuxtJS.
+                    <p>
+                      When I joined Saavu in November 2018, Saavu was working on
+                      an events management solution focusing at the time on
+                      corporate events. However, we shortly pivoted from events
+                      manage into micro payments. The idea was really good. I
+                      watch YouTube, I want to support the creators I watch but
+                      I do not want to give them all 1$ per month, maybe I want
+                      to share 10$ over 100 creators. To do this, Saavu would
+                      allow me to donate 10$ per month, and have this amount
+                      equally divided over my selected creators.
+                    </p>
+                    <p>
+                      Saavu was a small team and I had a lot of freedom to
+                      choose technologies and learn new skills. I got my first
+                      real professional experience setting up CI/CD pipelines in
+                      GitLab, learning from some amazingly talented Frontend
+                      developers. On a day to day basis, the core tech stack was
+                      NodeJS (Express) in a microservices architecture, PG,
+                      Zeit, Docker and NuxtJS.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -146,15 +145,21 @@
                   Aug 2017
                 </strong>
                 <div>
-                  <strong>SailChecker - Full Stack Web Developer</strong>
+                  <div><strong>Full Stack Developer (remote)</strong></div>
+                  <strong>SailChecker</strong>
                   <div class="text-caption">
-                    SailChecker is a yacht charter booking platform. I joined
-                    the SailChecker team in early August 2017. My role with
-                    SailChecker was to build an integration with multiple third
-                    party APIs to get the widest service area and best prices
-                    for our customers. The technologies we used to complete the
-                    integrations were PHP, NodeJS (AdonisJS), MySQL, AWS,
-                    Docker, Tensorflow and NuxtJS (VueJS SSR Framework).
+                    <p>
+                      My role at SailChecker was to build an integration to
+                      combine third party APIs to find yachts for rent. The core
+                      tech stack at SailChecker when I joined was PHP (drupal),
+                      MySQL and bare metal servers. As a team we created a
+                      platform where customers could search the entire market to
+                      find the best deals on yachts.
+                    </p>
+                    <p>
+                      We built the third party API integration with Node, MySQL
+                      and Vue for the frontend.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -170,19 +175,38 @@
                   Mar 2016
                 </strong>
                 <div>
-                  <strong>Dental Departures - Backend Web Developer</strong>
+                  <div>
+                    <strong>Full Stack Web Developer (remote/hybrid)</strong>
+                  </div>
+                  <strong>Dental Departures</strong>
                   <div class="text-caption">
-                    Dental Departures is a travel agency for dental and medical
-                    tourism. It turns out that you can travel to countries like
-                    Mexico, Thailand and Indonesia to have treatments that are
-                    of the quality you would expect from the US and Europe but
-                    at a fraction of the cost. It's a win win you get a once in
-                    a life time holiday and expert dental and medical care.
-                    During my time with Dental Departures, I worked on improving
-                    the customer search - helping customers find the right
-                    dentists. Second to that was creating an in-house analytics
-                    program to workout the cost of a lead and the expected value
-                    of a lead at any given point of time.
+                    <p>
+                      I joined Dental Departures in March 2016. My role was
+                      primarily as a backend web developer however I found
+                      myself working on the frontend at times as well. I worked
+                      on 3 large features during my time with Dental Departures.
+                      I improved their existing search functionality by reducing
+                      load times, and second to that, at the time you could only
+                      search by clinic. I added the ability to search for
+                      doctors and the clinics they worked in. This involved some
+                      changes to their in house CRM as we did not want to
+                      include all doctors by default, only selected doctors.
+                    </p>
+                    <p>
+                      Next I helped work on SEO functionality, this was guided
+                      by our in house SEO guru, I followed his lead and
+                      implemented his plans for content.
+                    </p>
+                    <p>
+                      I also worked on an in-house analytics program to workout
+                      the cost of a lead. We had very long lead times ~6 months
+                      and wanted to make sure we could attribute a lead back to
+                      the correct source.
+                    </p>
+                    <p>
+                      The core tech stack at DD were PHP (symfony), MySQL and
+                      Ember.js
+                    </p>
                   </div>
                 </div>
               </div>
@@ -198,15 +222,22 @@
                   Dec 2015
                 </strong>
                 <div>
-                  <strong>The E-Commerce Workroom - Web Developer</strong>
+                  <div><strong>Web Developer (remote/hybrid)</strong></div>
+                  <strong>The E-Commerce Workroom</strong>
                   <div class="text-caption">
-                    My role with E-Commerce workroom was "web developer" however
-                    my role was a lot more varied and I ended up doing various
-                    projects which involved the web, mobile and embedded
-                    engineering. I worked with E-Commerce workroom part time for
-                    several years. I loved working on projects with E-Commerce
-                    workroom because I'd usually be getting paid to learn new
-                    skills :).
+                    <p>
+                      E-Commerce Workroom was a web development agency, although
+                      they took on other projects from time to time as well. My
+                      role at E-Commerce Workroom ended up being very varied. I
+                      ended up working on mobile projects involving Ionic
+                      (Cordova at the time), web projects and even some embedded
+                      engineering projects involving Arduinos.
+                    </p>
+                    <p>
+                      I continued to collaborate with E-Commerce Workroom for
+                      many years, I'd usually be getting paid to learn new
+                      skills which was always an amazing opportunity :)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -222,15 +253,18 @@
                   Aug 2015
                 </strong>
                 <div>
-                  <strong>ITMarine Ltd - PHP Developer</strong>
+                  <div><strong>PHP Developer</strong></div>
+                  <strong>ITMarine Ltd</strong>
                   <div class="text-caption">
-                    ITMarine Ltd is a communication service for ship brokerage
-                    companies. I joined ITM Ltd with a short term contract to
-                    build a REST API in PHP. The goal of this API was to intake
-                    market data from various sources and provide close to real
-                    time aggregation of the different sources. The API had to be
-                    designed in such a way that it could be consumed by many
-                    frontend clients including Java, web and mobile.
+                    <p>
+                      ITMarine Ltd is a communication service for ship brokerage
+                      companies. I joined ITM Ltd with a short term contract to
+                      build a REST API in PHP. The goal of this API was to
+                      intake market data from various sources and provide close
+                      to real time aggregation of the different sources. The API
+                      had to be designed in such a way that it could be consumed
+                      by many frontend clients including Java, web and mobile.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -264,7 +298,80 @@
             </v-timeline-item>
           </v-timeline>
         </v-col>
+
+        <v-col cols="12" sm="12" md="3">
+          <h1>Matt Gould</h1>
+
+          <h2>Skills</h2>
+
+          <v-chip-group column>
+            <v-chip>AWS</v-chip>
+            <v-chip>ElasticSearch </v-chip>
+            <v-chip>DynamoDB</v-chip>
+            <v-chip>Lambda</v-chip>
+            <v-chip>AppSync</v-chip>
+            <v-chip>Cognito</v-chip>
+            <v-chip>SNS</v-chip>
+            <v-chip>SQS</v-chip>
+            <v-chip>CloudFront</v-chip>
+            <v-chip>S3</v-chip>
+            <v-chip>Serverless Framework</v-chip>
+            <v-chip>NodeJS</v-chip>
+            <v-chip>VueJS</v-chip>
+            <v-chip>CapacitorJS</v-chip>
+            <v-chip>Vuetify</v-chip>
+            <v-chip>Nuxt</v-chip>
+            <v-chip>Docker</v-chip>
+            <v-chip>Bash</v-chip>
+          </v-chip-group>
+
+          <h2>Links</h2>
+          <div class="d-flex justify-center">
+            <v-btn width="200px" class="mb-1" color="pink" block to="/about-me">
+              About Me
+            </v-btn>
+          </div>
+          <div class="d-flex justify-center">
+            <v-btn
+              width="200px"
+              class="mb-1"
+              block
+              to="/experience"
+              variant="tonal"
+            >
+              Experience
+            </v-btn>
+          </div>
+          <div class="d-flex justify-center">
+            <v-btn
+              width="200px"
+              color="white"
+              href="https://matthewfg.substack.com/p/"
+              target="_blank"
+              variant="tonal"
+              block
+              >Substack</v-btn
+            >
+          </div>
+        </v-col>
       </v-row>
+
+      <div class="wave-wrap">
+        <div v-for="i in waves" :key="i" :class="`wave wave-${i}`"></div>
+      </div>
+
+      <div class="star-wrap">
+        <div v-for="i in stars" :key="i" :class="`star star-${i}`"></div>
+      </div>
     </v-container>
   </main>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  layout: "home",
+});
+
+const stars = 200;
+const waves = 5;
+</script>

@@ -5,15 +5,6 @@ definePageMeta({
 
 const stars = 200;
 const waves = 5;
-
-const icons = [
-  { link: "https://github.com/MattGould1", icon: "mdi-github" },
-  { link: "https://gitlab.com/MatthewGould123", icon: "mdi-gitlab" },
-  {
-    link: "https://www.linkedin.com/in/matt-g-05248910b/",
-    icon: "mdi-linkedin",
-  },
-];
 </script>
 
 <template>
@@ -22,18 +13,7 @@ const icons = [
       <v-container class="on-top">
         <v-row class="pt-8 text-center">
           <v-col cols="12">
-            <h1>Matt Gould</h1>
-            <h4>Software Engineer - Based In Thailand</h4>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon.icon"
-              class="mx-4"
-              :icon="icon.icon"
-              :href="icon.link"
-              target="_blank"
-              variant="text"
-              size="large"
-            ></v-btn>
+            <custom-header></custom-header>
           </v-col>
         </v-row>
         <v-row>
@@ -91,6 +71,11 @@ const icons = [
                 </p>
               </v-col>
               <v-col cols="12">
+                <div class="d-flex justify-center">
+                  <v-btn width="200px" class="mb-1" to="/" variant="tonal">
+                    Home
+                  </v-btn>
+                </div>
                 <div class="d-flex justify-center">
                   <v-btn
                     width="200px"

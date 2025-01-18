@@ -1,16 +1,3 @@
-<script setup lang="ts">
-const router = useRouter();
-
-const icons = [
-  { link: "https://github.com/MattGould1", icon: "mdi-github" },
-  { link: "https://gitlab.com/MatthewGould123", icon: "mdi-gitlab" },
-  {
-    link: "https://www.linkedin.com/in/matt-g-05248910b/",
-    icon: "mdi-linkedin",
-  },
-];
-</script>
-
 <template>
   <v-app>
     <v-app-bar>
@@ -34,17 +21,7 @@ const icons = [
     </v-main>
 
     <v-footer class="text-center d-flex flex-column">
-      <div>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon.icon"
-          class="mx-4"
-          :icon="icon.icon"
-          :href="icon.link"
-          target="_blank"
-          variant="text"
-        ></v-btn>
-      </div>
+      <social-icons></social-icons>
 
       <div class="pt-0">Carpe Diem</div>
 
